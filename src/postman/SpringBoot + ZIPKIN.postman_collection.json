@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "aefa644d-7699-4035-af32-6abf779788c5",
+		"name": "SpringBoot + ZIPKIN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11727110"
+	},
+	"item": [
+		{
+			"name": "/demo-zipkin/zipkin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/demo-zipkin/zipkin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"demo-zipkin",
+						"zipkin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

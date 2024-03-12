@@ -1,0 +1,21 @@
+server:
+   compression:
+      enabled: true
+   port: 8083
+   servlet:
+      context-path: /demo-zipkin
+spring:
+   application:
+      name: demo-zipkin
+management:
+  tracing:
+    enabled: true
+    sampling:
+      probability: 1.0 # para enviar 100% das amostras
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans # alterar o endereço do Zipkin
+
+logging:
+  pattern:
+    level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
